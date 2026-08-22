@@ -5,15 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO & Social Meta Tags -->
-  <title>스마트 대출 이자 계산기 - 상환 방식별 계산 및 비교</title>
-  <meta name="description" content="원리금균등, 원금균등, 만기일시상환 등 대출 방식별 이자 계산기. 스마트한 대출 계획을 위한 용용이 대출 계산기 시뮬레이터.">
+  <title>스마트 대출 이자 계산기 - 용용이 ver (이자 및 상환 방식 계산)</title>
+  <meta name="description" content="용용이 ver 스마트 대출 이자 계산기. 원리금균등, 원금균등, 만기일시상환 방식별 대출 이자 계산, 상환 스케줄표 시뮬레이션 및 금융 가이드를 제공합니다. 정확한 대출 상환 계획을 세우고, 다양한 상환 방식을 비교하여 최적의 대출 전략을 확인하세요. 쉽고 편리한 계산기로 스마트한 금융 생활을 시작하세요.">
   <link rel="canonical" href="https://loan-info.pages.dev/">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="스마트 대출 이자 계산기 - 상환 방식별 계산 및 비교">
-  <meta property="og:description" content="원리금균등, 원금균등, 만기일시상환 등 대출 방식별 이자 계산기. 스마트한 대출 계획을 위한 용용이 대출 계산기 시뮬레이터.">
+  <meta property="og:title" content="스마트 대출 이자 계산기 - 용용이 ver (이자 및 상환 방식 계산)">
+  <meta property="og:description" content="원리금균등, 원금균등, 만기일시상환 방식별 대출 이자 계산 및 상환 스케줄표 시뮬레이션을 제공하는 스마트 대출 계산기입니다.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://loan-info.pages.dev/">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "스마트 대출 이자 계산기",
+    "url": "https://loan-info.pages.dev/",
+    "applicationCategory": "FinanceApplication",
+    "description": "원리금균등, 원금균등, 만기일시상환 방식별 대출 이자 계산 및 상환 스케줄 시뮬레이터.",
+    "operatingSystem": "All"
+  }
+  </script>
 
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-1774804957511077">
@@ -22,15 +35,15 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
   <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <!-- Google Fonts: Noto Sans KR & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <script>
     tailwind.config = {
@@ -96,7 +109,7 @@
         <div>
           <h1 class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
             스마트 대출 이자 계산기
-            <span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full font-semibold border border-brand-200">BEST79 Ver.</span>
+            <span class="text-xs bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full font-semibold border border-brand-200">용용이 ver</span>
           </h1>
           <p class="text-xs text-slate-500 hidden sm:block">정확한 대출 이자 및 상환 계획 시뮬레이터</p>
         </div>
@@ -119,6 +132,11 @@
       </div>
     </div>
   </header>
+
+  <!-- Last Updated / Freshness Signal -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 text-xs text-slate-400 no-print">
+    최종 업데이트: <time datetime="2026-08-22">2026년 8월 22일</time>
+  </div>
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1">
     
@@ -532,6 +550,18 @@
 
     <!-- TAB 3: LOAN GUIDE & FAQ VIEW -->
     <div id="tab-guide" class="hidden space-y-8">
+      
+      <!-- Methodology Section (Added for Credibility) -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-file-invoice-dollar text-brand-600"></i>
+          계산 방식 및 안내
+        </h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          본 계산기는 대출 금액, 대출 기간, 대출 금리를 입력받아 상환 방식별 이자를 계산합니다. 원리금균등상환, 원금균등상환, 만기일시상환 방식에 따라 금융기관별 계산 공식이 미세하게 다를 수 있으며, 실제 대출 계약 시에는 반드시 금융기관에서 제공하는 상환 스케줄을 확인하시기 바랍니다. 결과 값은 단수 차이가 발생할 수 있습니다.
+        </p>
+      </div>
+
       <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
         <div class="border-b border-slate-100 pb-4">
           <h2 class="text-xl font-extrabold text-slate-900 flex items-center gap-2">
