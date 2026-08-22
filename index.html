@@ -667,6 +667,30 @@
       </div>
     </div>
 
+    <!-- TAB: ABOUT -->
+    <div id="tab-about" class="hidden space-y-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+      <h2 class="text-xl font-extrabold text-slate-900">사이트 소개</h2>
+      <p class="text-slate-600 leading-relaxed">용용이 대출 이자 계산기는 사용자가 복잡한 대출 상환 계획을 쉽고 투명하게 계산할 수 있도록 돕는 금융 도구입니다.</p>
+    </div>
+
+    <!-- TAB: CONTACT -->
+    <div id="tab-contact" class="hidden space-y-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+      <h2 class="text-xl font-extrabold text-slate-900">문의하기</h2>
+      <p class="text-slate-600">서비스 관련 문의는 이메일(help@example.com)로 보내주시기 바랍니다.</p>
+    </div>
+
+    <!-- TAB: PRIVACY -->
+    <div id="tab-privacy" class="hidden space-y-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+      <h2 class="text-xl font-extrabold text-slate-900">개인정보 처리방침</h2>
+      <p class="text-slate-600 leading-relaxed">본 사이트는 사용자의 개인정보를 저장하지 않습니다. 광고 제공을 위해 쿠키가 사용될 수 있습니다.</p>
+    </div>
+
+    <!-- TAB: TERMS -->
+    <div id="tab-terms" class="hidden space-y-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+      <h2 class="text-xl font-extrabold text-slate-900">이용약관</h2>
+      <p class="text-slate-600 leading-relaxed">본 계산기는 참고용이며, 실제 금융 계약은 관련 기관의 안내를 반드시 확인하십시오.</p>
+    </div>
+
   </main>
 
   <!-- Footer -->
@@ -683,10 +707,10 @@
 
       <!-- Footer Links -->
       <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-700">
-        <a href="#" class="hover:text-brand-600 transition-colors">사이트 소개</a>
-        <a href="#" class="hover:text-brand-600 transition-colors">문의하기</a>
-        <a href="#" class="hover:text-brand-600 transition-colors">개인정보 처리방침</a>
-        <a href="#" class="hover:text-brand-600 transition-colors">이용약관</a>
+        <button onclick="switchTab('about')" class="hover:text-brand-600 transition-colors">사이트 소개</button>
+        <button onclick="switchTab('contact')" class="hover:text-brand-600 transition-colors">문의하기</button>
+        <button onclick="switchTab('privacy')" class="hover:text-brand-600 transition-colors">개인정보 처리방침</button>
+        <button onclick="switchTab('terms')" class="hover:text-brand-600 transition-colors">이용약관</button>
       </div>
 
       <!-- Copyright -->
