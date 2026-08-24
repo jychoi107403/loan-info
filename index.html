@@ -571,7 +571,7 @@
           </div>
 
           <!-- Card 2: Equal Principal -->
-          <div class="bg-slate-50 dark:bg-slate-850 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div class="bg-slate-50 dark:bg-slate-855 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
             <div>
               <h3 class="font-bold text-base text-slate-900 dark:text-white">원금균등상환</h3>
               <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">매월 동일한 원금 상환 + 잔액 이자</p>
@@ -1228,7 +1228,7 @@
       </div>
 
       <div class="flex justify-between items-center pt-2 border-t border-slate-100 dark:border-slate-800 text-xs">
-        <span class="text-slate-400" id="sim-storage-mode-indicator">저장소: 로컬 암호화 저장소</span>
+        <span class="text-slate-400" id="sim-storage-mode-indicator">저장소 연결 중...</span>
         <button onclick="closeModal('modal-list-sim')" class="px-4 py-2 rounded-xl font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">닫기</button>
       </div>
     </div>
@@ -1249,7 +1249,7 @@
 
       <div class="space-y-3.5 text-xs">
         <p class="text-slate-500 dark:text-slate-400">
-          Supabase 프로젝트의 URL과 Anon Key를 입력하시면 클라우드 DB에 암호화된 시뮬레이션을 동기화합니다. 미입력 시에는 브라우저 내부의 안전한 암호화 저장소에 저장됩니다.
+          Supabase 프로젝트의 URL과 Anon Key가 기본적으로 연동되어 있습니다. 별도의 프로젝트로 변경하고자 하실 때만 수정하세요.
         </p>
 
         <div>
@@ -1259,12 +1259,12 @@
 
         <div>
           <label for="cfg-supabase-key" class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Anon Public API Key</label>
-          <input type="password" id="cfg-supabase-key" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6..." class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-mono text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          <input type="password" id="cfg-supabase-key" placeholder="sb_publishable_..." class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-mono text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none">
         </div>
       </div>
 
       <div class="flex gap-2 justify-end pt-2">
-        <button onclick="clearSupabaseConfig()" class="px-4 py-2.5 rounded-xl text-xs font-semibold text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40">초기화</button>
+        <button onclick="resetDefaultSupabaseConfig()" class="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">기본값 복원</button>
         <button onclick="saveSupabaseConfig()" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md">
           설정 저장 및 연결
         </button>
@@ -1297,6 +1297,12 @@
   <!-- JAVASCRIPT: CORE CALCULATOR & SECURITY LOGIC -->
   <!-- ========================================== -->
   <script>
+    // ---------------------------------------------------------
+    // 0. Supabase 기본 설정 상수 (Cloudflare Pages 배포용)
+    // ---------------------------------------------------------
+    const DEFAULT_SUPABASE_URL = "https://bmosdfsnecapqkrnibyn.supabase.co";
+    const DEFAULT_SUPABASE_KEY = "sb_publishable_HVzgvqHrVIJjUFDByiZPUQ_P6hExwWo";
+
     // ---------------------------------------------------------
     // 1. 전역 상태 변수 (Global States)
     // ---------------------------------------------------------
@@ -1380,8 +1386,8 @@
     }
 
     function openSupabaseSettingsModal() {
-      const url = localStorage.getItem('supabase_url') || '';
-      const key = localStorage.getItem('supabase_key') || '';
+      const url = localStorage.getItem('supabase_url') || DEFAULT_SUPABASE_URL;
+      const key = localStorage.getItem('supabase_key') || DEFAULT_SUPABASE_KEY;
       document.getElementById('cfg-supabase-url').value = url;
       document.getElementById('cfg-supabase-key').value = key;
       openModal('modal-supabase-settings');
@@ -1469,21 +1475,37 @@
     // ---------------------------------------------------------
     // 6. Supabase 클라이언트 초기화 및 설정
     // ---------------------------------------------------------
+    function sanitizeSupabaseUrl(rawUrl) {
+      if (!rawUrl) return DEFAULT_SUPABASE_URL;
+      let u = rawUrl.trim();
+      // 끝에 /rest/v1 또는 /rest/v1/ 이 붙어있다면 제거
+      u = u.replace(/\/rest\/v1\/?$/, '');
+      // 끝에 슬래시 제거
+      u = u.replace(/\/+$/, '');
+      return u;
+    }
+
     function initSupabaseClient() {
-      const url = localStorage.getItem('supabase_url');
-      const key = localStorage.getItem('supabase_key');
+      let rawUrl = localStorage.getItem('supabase_url') || DEFAULT_SUPABASE_URL;
+      let key = localStorage.getItem('supabase_key') || DEFAULT_SUPABASE_KEY;
       
-      if (url && key && window.supabase) {
+      const cleanUrl = sanitizeSupabaseUrl(rawUrl);
+
+      if (cleanUrl && key && window.supabase) {
         try {
-          supabaseClient = window.supabase.createClient(url, key);
-          document.getElementById('sim-storage-mode-indicator').innerText = '저장소: Supabase 클라우드 DB';
+          supabaseClient = window.supabase.createClient(cleanUrl, key);
+          const indicator = document.getElementById('sim-storage-mode-indicator');
+          if (indicator) indicator.innerText = '저장소: Supabase 클라우드 DB 연결됨 🟢';
         } catch (e) {
-          console.warn("Supabase 연결 실패, 로컬 암호화 모드로 전환합니다.");
+          console.warn("Supabase 연결 실패, 로컬 암호화 모드로 전환합니다.", e);
           supabaseClient = null;
+          const indicator = document.getElementById('sim-storage-mode-indicator');
+          if (indicator) indicator.innerText = '저장소: 브라우저 로컬 암호화 저장소';
         }
       } else {
         supabaseClient = null;
-        document.getElementById('sim-storage-mode-indicator').innerText = '저장소: 브라우저 로컬 암호화 저장소';
+        const indicator = document.getElementById('sim-storage-mode-indicator');
+        if (indicator) indicator.innerText = '저장소: 브라우저 로컬 암호화 저장소';
       }
     }
 
@@ -1502,11 +1524,13 @@
       closeModal('modal-supabase-settings');
     }
 
-    function clearSupabaseConfig() {
+    function resetDefaultSupabaseConfig() {
       localStorage.removeItem('supabase_url');
       localStorage.removeItem('supabase_key');
+      document.getElementById('cfg-supabase-url').value = DEFAULT_SUPABASE_URL;
+      document.getElementById('cfg-supabase-key').value = DEFAULT_SUPABASE_KEY;
       initSupabaseClient();
-      showToast('Supabase 설정이 초기화되었습니다. 로컬 저장소를 사용합니다.');
+      showToast('기본 Supabase 클라우드 설정으로 복원되었습니다.');
       closeModal('modal-supabase-settings');
     }
 
@@ -1651,7 +1675,6 @@
       if (!targetItem) return;
 
       let pin = "";
-      // 복호화 시도
       try {
         let payload = null;
         try {
@@ -1661,7 +1684,6 @@
             salt: targetItem.salt
           }, "");
         } catch (e) {
-          // 기본키로 안 풀리면 사용자 PIN 입력 요청
           pin = prompt("이 시뮬레이션은 PIN 번호로 보호되어 있습니다. PIN 번호를 입력하세요:");
           if (pin === null) return;
           payload = await decryptPayload({
@@ -1671,7 +1693,6 @@
           }, pin);
         }
 
-        // 입력 폼에 대입 및 재계산
         document.getElementById('input-amount').value = payload.amount;
         document.getElementById('input-term').value = payload.term;
         setTermUnit(payload.unit || 'years');
