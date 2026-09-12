@@ -33,12 +33,12 @@
   </script>
 
   <!-- SEO & Social Meta Tags -->
-  <title>스마트 대출 이자 계산기 - 용용이 ver (이자, 중도상환, DSR, 클라우드 저장)</title>
-  <meta name="description" content="용용이 ver 스마트 대출 이자 계산기. 원리금균등, 원금균등, 만기일시상환 방식별 대출 이자 계산, 상환 스케줄표 시뮬레이션, 중도상환 수수료 및 절감액 계산, DSR 진단, 안전한 암호화 시뮬레이션 저장까지 지원합니다.">
+  <title>담보대출 계산기 - 용용이 ver (이자, 중도상환, DSR, 클라우드 저장)</title>
+  <meta name="description" content="용용이 ver 담보대출 계산기. 원리금균등, 원금균등, 만기일시상환 방식별 대출 이자 계산, 상환 스케줄표 시뮬레이션, 중도상환 수수료 및 절감액 계산, DSR 진단, 안전한 암호화 시뮬레이션 저장까지 지원합니다.">
   <link rel="canonical" href="https://loan-info.pages.dev/">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="스마트 대출 이자 계산기 - 용용이 ver (이자, 중도상환, DSR, 클라우드 저장)">
+  <meta property="og:title" content="담보대출 계산기 - 용용이 ver (이자, 중도상환, DSR, 클라우드 저장)">
   <meta property="og:description" content="원리금균등, 원금균등, 만기일시상환 대출 이자 계산 및 안전한 암호화 시뮬레이션 저장을 지원하는 종합 금융 플랫폼입니다.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://loan-info.pages.dev/">
@@ -48,7 +48,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "스마트 대출 이자 계산기",
+    "name": "담보대출 계산기",
     "url": "https://loan-info.pages.dev/",
     "applicationCategory": "FinanceApplication",
     "description": "원리금균등, 원금균등, 만기일시상환 대출 이자 계산, 중도상환 수수료 및 DSR 시뮬레이터.",
@@ -60,21 +60,10 @@
   <meta name="google-adsense-account" content="ca-pub-1774804957511077">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1774804957511077" crossorigin="anonymous"></script>
   
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   
-  <!-- Tailwind CSS CDN (다크모드 활성화) -->
-  <script src="https://cdn.tailwindcss.com" defer></script>
-  <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-  <!-- Supabase JS Client CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <!-- Google Fonts: Noto Sans KR & Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-
+  <!-- Tailwind CSS CDN (즉시 동기 로드) -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -99,6 +88,17 @@
       }
     }
   </script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <!-- Supabase JS Client CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Noto Sans KR & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
   <style>
     /* Fix CLS: Set min-height for dynamic containers */
@@ -160,10 +160,10 @@
         </div>
         <div>
           <h1 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            스마트 대출 계산기
+            담보대출 계산기
             <span class="text-xs bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded-full font-semibold border border-brand-200 dark:border-brand-800">용용이 ver</span>
           </h1>
-          <p class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">대출 이자, 중도상환, DSR 및 안전 암호화 클라우드 저장</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">담보대출 이자, 중도상환, DSR 및 안전 암호화 클라우드 저장</p>
         </div>
       </div>
 
@@ -1489,10 +1489,10 @@
             <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-xs">
               <i class="fa-solid fa-calculator"></i>
             </div>
-            <span class="font-bold text-slate-900 dark:text-white text-sm">스마트 대출 계산기</span>
+            <span class="font-bold text-slate-900 dark:text-white text-sm">담보대출 계산기</span>
           </div>
           <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-            복잡한 대출 이자와 상환 계획을 투명하게 계산하고, Web Crypto API(AES-256)로 개인 금융 정보를 안전하게 보호하는 무료 금융 플랫폼입니다.
+            복잡한 담보대출 이자와 상환 계획을 투명하게 계산하고, Web Crypto API(AES-256)로 개인 금융 정보를 안전하게 보호하는 무료 금융 플랫폼입니다.
           </p>
         </div>
 
