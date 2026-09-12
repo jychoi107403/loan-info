@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko" class="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYFYJM880Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NYFYJM880Q');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 다크 모드 초기화 스크립트 -->
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+    }
+  </script>
+
+  <!-- SEO & Social Meta Tags -->
+  <title>개인정보 처리방침 (Privacy Policy) | 스마트 대출 계산기</title>
+  <meta name="description" content="스마트 대출 계산기의 개인정보 처리방침입니다. 구글 애드센스 광고 쿠키 정책, Web Crypto API(AES-256) 종단간 암호화 데이터 보호 정책 및 사용자 권리를 상세히 안내합니다.">
+  <link rel="canonical" href="https://loan-info.pages.dev/privacy.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="개인정보 처리방침 (Privacy Policy) | 스마트 대출 계산기">
+  <meta property="og:description" content="사용자의 개인 금융 정보 보호 및 구글 애드센스 쿠키 정책을 준수하는 개인정보 처리방침입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://loan-info.pages.dev/privacy.html">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <!-- Google Fonts: Noto Sans KR & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Noto Sans KR', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col justify-between transition-colors duration-200">
+
+  <!-- Top Navigation Header -->
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-calculator text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            스마트 대출 계산기
+            <span class="text-xs bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded-full font-semibold border border-brand-200 dark:border-brand-800">용용이 ver</span>
+          </span>
+          <span class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">금융 이자, 중도상환, DSR & 보안 암호화 저장</span>
+        </div>
+      </a>
+
+      <!-- Header Navigation Links -->
+      <div class="flex items-center space-x-2">
+        <nav class="hidden md:flex items-center space-x-1">
+          <a href="/" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">계산기 홈</a>
+          <a href="/guides/amortization-methods.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">금융 가이드</a>
+          <a href="/about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">소개</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">문의하기</a>
+        </nav>
+
+        <!-- Dark Mode Toggle Button -->
+        <button onclick="toggleDarkMode()" id="btn-theme-toggle" class="p-2 w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all flex items-center justify-center shrink-0" title="다크 모드 토글">
+          <i class="fa-solid fa-moon dark:hidden text-sm"></i>
+          <i class="fa-solid fa-sun hidden dark:block text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+    
+    <!-- Breadcrumb -->
+    <nav class="flex items-center text-xs text-slate-500 dark:text-slate-400 mb-6 space-x-2">
+      <a href="/" class="hover:text-brand-600"><i class="fa-solid fa-house mr-1"></i>홈</a>
+      <span><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      <span class="text-slate-800 dark:text-slate-200 font-semibold">개인정보 처리방침</span>
+    </nav>
+
+    <!-- Header Title -->
+    <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+        <i class="fa-solid fa-shield-halved"></i> 개인정보 및 보안 정책
+      </div>
+      <h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">개인정보 처리방침 (Privacy Policy)</h1>
+      <p class="text-xs text-slate-500 dark:text-slate-400">최종 개정일자: 2026년 9월 12일 | 시행일자: 2026년 9월 12일</p>
+    </div>
+
+    <!-- Policy Content -->
+    <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-8 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+      
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 1 조</span> (목적)
+        </h2>
+        <p>
+          스마트 대출 계산기(이하 '서비스')는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 개인정보 및 프라이버시를 안전하게 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 2 조</span> (개인정보의 처리 항목 및 수집 방법)
+        </h2>
+        <p>
+          본 서비스는 <strong>별도의 회원가입 없이 누구나 무료로 이용</strong>할 수 있으며, 주민등록번호, 실명 등 이용자를 직접 식별할 수 있는 개인 식별 정보를 수집·보관하지 않습니다.
+        </p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-600 dark:text-slate-400">
+          <li><strong>대출 시뮬레이션 데이터</strong>: 사용자가 입력한 대출 원금, 이자율, 대출 기간, 상환 방식 등은 브라우저 메모리 및 로컬 저장소(LocalStorage)에서만 실시간으로 연산됩니다.</li>
+          <li><strong>클라우드 저장 기능 이용 시</strong>: 사용자가 명시적으로 '시뮬레이션 저장'을 누를 경우, 데이터는 브라우저 내부에서 <strong>Web Crypto API (AES-256)</strong>로 암호화(Ciphertext)된 후 전송되며 원문 데이터는 서버에 절대 전송되지 않습니다.</li>
+          <li><strong>서비스 이용 과정에서 자동 생성·수집되는 항목</strong>: 접속 IP 주소, 브라우저 종류, OS 정보, 방문 일시, 서비스 이용 기록(접속 통계용).</li>
+        </ul>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 3 조</span> (구글 애드센스 및 제3자 쿠키 정책)
+        </h2>
+        <p>
+          본 웹사이트는 양질의 무료 서비스를 유지하고 운영하기 위해 <strong>Google AdSense(구글 애드센스)</strong> 광고를 게재합니다.
+        </p>
+        <div class="p-4 rounded-2xl bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900 space-y-2 text-blue-900 dark:text-blue-300 text-xs sm:text-sm">
+          <p class="font-bold flex items-center gap-1.5"><i class="fa-brands fa-google text-blue-600"></i> Google 광고 쿠키(Cookie) 안내</p>
+          <ul class="list-disc list-inside space-y-1 leading-relaxed text-blue-800 dark:text-blue-400 text-xs">
+            <li>Google을 포함한 제3자 광고 사업자는 쿠키를 사용하여 이용자의 이전 웹사이트 방문 기록을 바탕으로 맞춤형 광고를 게재합니다.</li>
+            <li>Google의 광고 쿠키 사용으로 인해 Google 및 그 파트너는 인터넷 상의 다른 사이트 방문 기록을 바탕으로 적절한 광고를 이용자에게 표시할 수 있습니다.</li>
+            <li>이용자는 <a href="https://adssettings.google.com" target="_blank" class="underline font-bold text-brand-600">Google 광고 설정 페이지</a>를 방문하여 개인 맞춤 광고를 비활성화(Opt-out)할 수 있습니다.</li>
+            <li>또한, <a href="https://www.aboutads.info/choices/" target="_blank" class="underline font-bold text-brand-600">aboutads.info</a>를 방문하여 제3자 업체의 쿠키 사용을 차단할 수 있습니다.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 4 조</span> (쿠키(Cookie)의 설치·운영 및 거부 방법)
+        </h2>
+        <p>
+          이용자는 웹 브라우저 설정을 통해 쿠키 허용 여부를 언제든지 직접 선택할 수 있습니다.
+        </p>
+        <div class="bg-slate-50 dark:bg-slate-800/60 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800 text-xs space-y-1.5">
+          <p class="font-semibold text-slate-800 dark:text-slate-200">📌 브라우저별 쿠키 설정 방법:</p>
+          <p>• <strong>Chrome</strong>: 설정 &gt; 개인정보 보호 및 보안 &gt; 서드 파티 쿠키 &gt; 쿠키 차단 설정</p>
+          <p>• <strong>Edge</strong>: 설정 &gt; 쿠키 및 사이트 권한 &gt; 쿠키 및 사이트 데이터 관리 및 삭제</p>
+          <p>• <strong>Safari</strong>: 환경설정 &gt; 개인정보 보호 &gt; 모든 쿠키 차단</p>
+        </div>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 5 조</span> (개인정보의 안전성 확보 조치)
+        </h2>
+        <p>
+          본 서비스는 이용자의 데이터가 유출되거나 훼손되지 않도록 다음과 같은 기술적·관리적 대책을 강구하고 있습니다:
+        </p>
+        <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600 dark:text-slate-400">
+          <li><strong>Web Crypto API 종단간 암호화(E2EE)</strong>: 사용자의 금융 시뮬레이션 데이터를 표준 AES-GCM 256bit 알고리즘으로 기기 내 암호화 처리합니다.</li>
+          <li><strong>HTTPS 보안 통신</strong>: 모든 데이터 전송 구간에 SSL/TLS 보안 프로토콜을 적용하여 네트워크 도청 및 변조를 방지합니다.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="text-brand-600 font-black">제 6 조</span> (개인정보 보호 책임자 및 문의처)
+        </h2>
+        <p>
+          서비스의 개인정보 처리에 관한 문의, 불만 처리, 피해 구제 등에 관한 사항은 아래의 문의처를 통해 연락해 주시기 바랍니다:
+        </p>
+        <div class="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200/80 dark:border-slate-800 text-xs space-y-1 text-slate-700 dark:text-slate-300">
+          <p>• <strong>서비스명</strong>: 스마트 대출 계산기 (용용이 ver)</p>
+          <p>• <strong>이메일 문의</strong>: help.loan.info@gmail.com</p>
+          <p>• <strong>문의 페이지</strong>: <a href="/contact.html" class="text-brand-600 font-bold underline">온라인 고객 문의 바로가기</a></p>
+        </div>
+      </section>
+
+      <section class="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          본 방침은 관련 법령, 보안 기술 및 구글 정책의 변경에 따라 수정될 수 있으며, 개정 시 본 페이지를 통해 사전 공지합니다.
+        </p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-16 text-xs text-slate-500 dark:text-slate-400 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-6">
+      <div class="max-w-2xl mx-auto text-center space-y-2">
+        <h4 class="font-bold text-slate-900 dark:text-white">스마트 대출 이자 계산기</h4>
+        <p class="leading-relaxed text-slate-600 dark:text-slate-400">
+          복잡한 대출 상환 계획을 쉽고 투명하게 계산하여, 사용자가 올바른 금융 의사결정을 내릴 수 있도록 돕는 비영리 정보 플랫폼입니다.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-700 dark:text-slate-300">
+        <a href="/about.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">사이트 소개</a>
+        <a href="/contact.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">문의하기</a>
+        <a href="/privacy.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors font-bold text-brand-600 dark:text-brand-400">개인정보 처리방침</a>
+        <a href="/terms.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">이용약관</a>
+        <a href="/disclaimer.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">면책조항</a>
+      </div>
+
+      <p class="text-center text-slate-400 dark:text-slate-500">© 2026 Smart Loan Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+  </script>
+</body>
+</html>

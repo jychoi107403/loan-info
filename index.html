@@ -186,10 +186,10 @@
             <i class="fa-solid fa-gauge-high"></i>
             <span>DSR 진단</span>
           </button>
-          <button onclick="switchTab('guide')" id="nav-btn-guide" class="px-3 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hidden md:flex items-center gap-1.5 whitespace-nowrap">
-            <i class="fa-solid fa-circle-question"></i>
-            <span>가이드</span>
-          </button>
+          <a href="/guides/amortization-methods.html" class="px-3 py-2 rounded-lg text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 hover:bg-brand-50 dark:hover:bg-brand-950/60 transition-all flex items-center gap-1.5 whitespace-nowrap">
+            <i class="fa-solid fa-book-open"></i>
+            <span>금융 가이드</span>
+          </a>
         </div>
 
         <!-- Dark Mode Toggle Button -->
@@ -1124,28 +1124,232 @@
       </div>
     </div>
 
-    <!-- TAB: ABOUT -->
-    <div id="tab-about" class="hidden space-y-8 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors duration-200">
-      <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">사이트 소개</h2>
-      <p class="text-slate-600 dark:text-slate-400 leading-relaxed">용용이 대출 이자 계산기는 사용자가 복잡한 대출 상환 계획을 쉽고 투명하게 계산할 수 있도록 돕는 금융 도구입니다.</p>
-    </div>
+    <!-- ========================================== -->
+    <!-- FINANCIAL GUIDES HUB (금융 가이드 & 백과사전) -->
+    <!-- ========================================== -->
+    <div class="mt-12 bg-white dark:bg-slate-900 p-6 sm:p-10 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-8 transition-colors duration-200">
+      <div class="border-b border-slate-100 dark:border-slate-800 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 dark:bg-brand-950/80 border border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-300 text-xs font-bold mb-2">
+            <i class="fa-solid fa-graduation-cap"></i> 스마트 금융 지식 센터
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+            대출 신청 전 꼭 알아야 할 <span class="text-brand-600 dark:text-brand-400">금융 가이드 & 상식 백과</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+            복잡한 대출 규제와 이자 계산법을 초보자도 쉽게 이해할 수 있도록 전문가가 분석한 실전 가이드입니다.
+          </p>
+        </div>
+      </div>
 
-    <!-- TAB: CONTACT -->
-    <div id="tab-contact" class="hidden space-y-8 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors duration-200">
-      <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">문의하기</h2>
-      <p class="text-slate-600 dark:text-slate-400">서비스 관련 문의는 이메일(help@example.com)로 보내주시기 바랍니다.</p>
-    </div>
+      <!-- Guides 12 Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-xs">
+        
+        <!-- Guide 1 -->
+        <a href="/guides/amortization-methods.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-bold text-[11px]">상환 방식</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              원리금균등 vs 원금균등 vs 만기일시 완벽 비교
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              동일한 대출 조건에서 3가지 상환 방식의 총 이자 차이와 나에게 맞는 최적의 선택 기준을 제시합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
 
-    <!-- TAB: PRIVACY -->
-    <div id="tab-privacy" class="hidden space-y-8 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors duration-200">
-      <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">개인정보 처리방침</h2>
-      <p class="text-slate-600 dark:text-slate-400 leading-relaxed">본 사이트는 사용자의 개인정보를 평문으로 저장하지 않으며, 모든 시뮬레이션 데이터는 브라우저 단에서 AES-256 종단간 암호화(E2EE) 처리됩니다.</p>
-    </div>
+        <!-- Guide 2 -->
+        <a href="/guides/dsr-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 font-bold text-[11px]">DSR 규제</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              스트레스 DSR 40% 규제와 대출 한도 늘리는 법
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              DSR 계산 공식, 스트레스 가산금리 적용 원리와 대출 한도를 극대화하는 5가지 실전 전략.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
 
-    <!-- TAB: TERMS -->
-    <div id="tab-terms" class="hidden space-y-8 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors duration-200">
-      <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">이용약관</h2>
-      <p class="text-slate-600 dark:text-slate-400 leading-relaxed">본 계산기는 참고용이며, 실제 금융 계약은 관련 기관의 안내를 반드시 확인하십시오.</p>
+        <!-- Guide 3 -->
+        <a href="/guides/early-repayment-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-purple-100 dark:bg-purple-900/60 text-purple-700 dark:text-purple-300 font-bold text-[11px]">중도상환</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              중도상환 수수료 3년 면제와 이자 절약 극대화법
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              일할 차감 계산식과 금액감액형 vs 기간단축형 선택 가이드, 조기상환 손익분기 계산.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 4 -->
+        <a href="/guides/credit-score-management.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-amber-100 dark:bg-amber-900/60 text-amber-700 dark:text-amber-300 font-bold text-[11px]">신용점수</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              신용점수 올리는 법 7가지: 대출 금리 1%p 낮추기
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              NICE/KCB 점수 관리, 신용카드 한도 30% 유지, 비금융 납부내역 등록과 금리인하요구권.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 5 -->
+        <a href="/guides/mortgage-loan-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-rose-100 dark:bg-rose-900/60 text-rose-700 dark:text-rose-300 font-bold text-[11px]">주택담보대출</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              주택담보대출(주담대) LTV 규제와 아파트 대출 가이드
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              KB시세 기준 LTV 한도, 코픽스 금리 기준, 30년 vs 40년 만기 비교 및 필수 부대비용.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 6 -->
+        <a href="/guides/jeonse-loan-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-teal-100 dark:bg-teal-900/60 text-teal-700 dark:text-teal-300 font-bold text-[11px]">전세자금</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              버팀목 전세대출 vs 은행권 조건 비교 & 보증보험
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              청년·신혼부부 버팀목 1~2%대 금리, HUG·HF·SGI 보증기관 차이점과 반환보증보험.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 7 -->
+        <a href="/guides/credit-loan-comparison.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-bold text-[11px]">신용대출</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              직장인 신용대출 vs 마이너스통장 차이와 유리한 선택
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              단리 vs 복리 이자 계산 방식 차이, 마통의 DSR 산정 영향과 비상금 운용법.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 8 -->
+        <a href="/guides/refinancing-loan-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 font-bold text-[11px]">대환대출</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              온라인 원스톱 대출 갈아타기 절차 & 손익분기 계산
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              모바일 대환대출 인프라 이용법, 금리 인하 이득과 수수료 손익 계산 공식.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 9 -->
+        <a href="/guides/grace-period-guide.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-orange-100 dark:bg-orange-900/60 text-orange-700 dark:text-orange-300 font-bold text-[11px]">거치기간</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              대출 거치기간 설정의 장점과 이자 폭탄 피하는 법
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              거치기간 동안 늘어나는 총 이자액과 거치 종료 후 월 상환액 급증 시뮬레이션.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 10 -->
+        <a href="/guides/interest-rate-types.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-cyan-100 dark:bg-cyan-900/60 text-cyan-700 dark:text-cyan-300 font-bold text-[11px]">금리 유형</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              고정금리 vs 변동금리 vs 주기형 금리 선택 가이드
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              기준금리 변동기 나에게 맞는 금리 선택, 5년 주기형 주담대의 장점 분석.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 11 -->
+        <a href="/guides/government-support-loans.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 font-bold text-[11px]">정책 대출</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              2026 정부지원 대출 총정리: 디딤돌·버팀목·신생아특례
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              서민 정책대출 자격 요건, 1%대 초저금리 혜택과 DSR 예외 적용 기준 총정리.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Guide 12 -->
+        <a href="/guides/loan-terms-dictionary.html" class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-md transition-all group flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded-md bg-violet-100 dark:bg-violet-900/60 text-violet-700 dark:text-violet-300 font-bold text-[11px]">용어 사전</span>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              대출 전 필수 금융 용어 30선 총정리 백과사전
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-[11px]">
+              LTV, DTI, 코픽스, 가산금리, 근저당권, 질권설정 등 꼭 알아야 할 핵심 금융 용어.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-brand-600 dark:text-brand-400 font-semibold text-[11px]">
+            <span>자세히 보기</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+
+      </div>
     </div>
 
   </main>
@@ -1273,23 +1477,67 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-12 text-center text-xs text-slate-500 dark:text-slate-400 no-print transition-colors duration-200">
-    <div class="max-w-7xl mx-auto px-4 space-y-6">
-      <div class="max-w-2xl mx-auto space-y-2">
-        <h4 class="font-bold text-slate-900 dark:text-white">스마트 대출 이자 계산기</h4>
-        <p class="leading-relaxed text-slate-600 dark:text-slate-400">
-          복잡한 대출 상환 계획을 쉽고 투명하게 계산하여, 사용자가 올바른 금융 의사결정을 내릴 수 있도록 돕는 것을 목표로 합니다. 본 계산기는 참고용으로 제공되며, 실제 대출 계약 시 금융기관의 정확한 안내를 확인하시기 바랍니다.
-        </p>
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-16 text-xs text-slate-500 dark:text-slate-400 no-print transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-8">
+      
+      <!-- Footer Top: About & Links Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+        
+        <!-- Col 1: Service Intro -->
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center space-x-2">
+            <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-xs">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <span class="font-bold text-slate-900 dark:text-white text-sm">스마트 대출 계산기</span>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            복잡한 대출 이자와 상환 계획을 투명하게 계산하고, Web Crypto API(AES-256)로 개인 금융 정보를 안전하게 보호하는 무료 금융 플랫폼입니다.
+          </p>
+        </div>
+
+        <!-- Col 2: Calculation Tools -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs">대출 계산 도구</h4>
+          <ul class="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+            <li><button onclick="switchTab('calculator'); window.scrollTo({top: 0, behavior: 'smooth'});" class="hover:text-brand-600 dark:hover:text-brand-400">상환 방식별 이자 계산기</button></li>
+            <li><button onclick="switchTab('comparison'); window.scrollTo({top: 0, behavior: 'smooth'});" class="hover:text-brand-600 dark:hover:text-brand-400">상환 방식 3종 한눈 비교</button></li>
+            <li><button onclick="switchTab('early-repayment'); window.scrollTo({top: 0, behavior: 'smooth'});" class="hover:text-brand-600 dark:hover:text-brand-400">중도상환 수수료 & 이자 절감</button></li>
+            <li><button onclick="switchTab('dsr'); window.scrollTo({top: 0, behavior: 'smooth'});" class="hover:text-brand-600 dark:hover:text-brand-400">DSR 규제 한도 간이 진단</button></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Guides -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs">핵심 금융 가이드</h4>
+          <ul class="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+            <li><a href="/guides/amortization-methods.html" class="hover:text-brand-600 dark:hover:text-brand-400">원리금균등 vs 원금균등 비교</a></li>
+            <li><a href="/guides/dsr-guide.html" class="hover:text-brand-600 dark:hover:text-brand-400">스트레스 DSR 40% 계산법</a></li>
+            <li><a href="/guides/early-repayment-guide.html" class="hover:text-brand-600 dark:hover:text-brand-400">중도상환 수수료 3년 면제 규정</a></li>
+            <li><a href="/guides/credit-score-management.html" class="hover:text-brand-600 dark:hover:text-brand-400">신용점수 올리기 7가지 원칙</a></li>
+            <li><a href="/guides/mortgage-loan-guide.html" class="hover:text-brand-600 dark:hover:text-brand-400">주택담보대출 LTV·DTI 가이드</a></li>
+            <li><a href="/guides/loan-terms-dictionary.html" class="hover:text-brand-600 dark:hover:text-brand-400">대출 필수 금융 용어 사전</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Trust & Legal Policies -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs">서비스 정책 및 신뢰</h4>
+          <ul class="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+            <li><a href="/about.html" class="hover:text-brand-600 dark:hover:text-brand-400">서비스 소개 (About Us)</a></li>
+            <li><a href="/contact.html" class="hover:text-brand-600 dark:hover:text-brand-400">고객 문의 & 오류 제보</a></li>
+            <li><a href="/privacy.html" class="hover:text-brand-600 dark:hover:text-brand-400">개인정보 처리방침</a></li>
+            <li><a href="/terms.html" class="hover:text-brand-600 dark:hover:text-brand-400">서비스 이용약관</a></li>
+            <li><a href="/disclaimer.html" class="hover:text-brand-600 dark:hover:text-brand-400">금융 면책조항 (Disclaimer)</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-700 dark:text-slate-300">
-        <button onclick="switchTab('about')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">사이트 소개</button>
-        <button onclick="switchTab('contact')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">문의하기</button>
-        <button onclick="switchTab('privacy')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">개인정보 처리방침</button>
-        <button onclick="switchTab('terms')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">이용약관</button>
+      <!-- Footer Bottom Bar -->
+      <div class="pt-6 border-t border-slate-200/80 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400 dark:text-slate-500">
+        <p>본 사이트의 대출 시뮬레이션 결과는 참고용이며 실제 대출 계약은 해당 금융기관의 심사에 따릅니다.</p>
+        <p>© 2026 Smart Loan Calculator. All rights reserved.</p>
       </div>
-
-      <p class="text-slate-400 dark:text-slate-500">© 2026 Smart Loan Calculator. All rights reserved.</p>
     </div>
   </footer>
 

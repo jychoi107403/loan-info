@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko" class="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYFYJM880Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NYFYJM880Q');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 다크 모드 초기화 스크립트 -->
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+    }
+  </script>
+
+  <!-- SEO & Social Meta Tags -->
+  <title>문의하기 (Contact Us) | 스마트 대출 계산기</title>
+  <meta name="description" content="스마트 대출 계산기 서비스 문의, 오류 제보, 기능 개선 제안을 위한 고객지원 센터입니다. 이용자 피드백을 신속하게 검토하여 답변해 드립니다.">
+  <link rel="canonical" href="https://loan-info.pages.dev/contact.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="문의하기 (Contact Us) | 스마트 대출 계산기">
+  <meta property="og:description" content="스마트 대출 계산기 운영팀에 문의사항, 버그 제보, 기능 제안을 남겨주세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://loan-info.pages.dev/contact.html">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <!-- Google Fonts: Noto Sans KR & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Noto Sans KR', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col justify-between transition-colors duration-200">
+
+  <!-- Top Navigation Header -->
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-calculator text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            스마트 대출 계산기
+            <span class="text-xs bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded-full font-semibold border border-brand-200 dark:border-brand-800">용용이 ver</span>
+          </span>
+          <span class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">금융 이자, 중도상환, DSR & 보안 암호화 저장</span>
+        </div>
+      </a>
+
+      <!-- Header Navigation Links -->
+      <div class="flex items-center space-x-2">
+        <nav class="hidden md:flex items-center space-x-1">
+          <a href="/" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">계산기 홈</a>
+          <a href="/guides/amortization-methods.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">금융 가이드</a>
+          <a href="/about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">소개</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800">문의하기</a>
+        </nav>
+
+        <!-- Dark Mode Toggle Button -->
+        <button onclick="toggleDarkMode()" id="btn-theme-toggle" class="p-2 w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all flex items-center justify-center shrink-0" title="다크 모드 토글">
+          <i class="fa-solid fa-moon dark:hidden text-sm"></i>
+          <i class="fa-solid fa-sun hidden dark:block text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+    
+    <!-- Breadcrumb -->
+    <nav class="flex items-center text-xs text-slate-500 dark:text-slate-400 mb-6 space-x-2">
+      <a href="/" class="hover:text-brand-600"><i class="fa-solid fa-house mr-1"></i>홈</a>
+      <span><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      <span class="text-slate-800 dark:text-slate-200 font-semibold">문의하기 (Contact Us)</span>
+    </nav>
+
+    <!-- Header Title -->
+    <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 dark:bg-brand-950/80 border border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-300 text-xs font-bold">
+        <i class="fa-solid fa-headset"></i> 고객 지원 및 피드백
+      </div>
+      <h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">문의 및 제안 (Contact Us)</h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+        스마트 대출 계산기를 이용해 주셔서 감사합니다. 서비스 이용 중 불편한 점이나 새로운 기능 제안, 오류 제보가 있으시면 언제든지 의견을 남겨주세요.
+      </p>
+    </div>
+
+    <!-- Contact Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+      
+      <!-- Contact Info (Left) -->
+      <div class="md:col-span-5 space-y-6">
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-4">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-brand-600"></i> 직접 이메일 문의
+          </h2>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            상세한 문의사항이나 제휴 문의는 아래 공식 이메일로 보내주시면 영업일 기준 1~2일 이내에 성심껏 검토 후 답변드립니다.
+          </p>
+          <div class="p-3.5 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200/60 dark:border-slate-700 text-xs space-y-1 font-mono">
+            <div class="text-slate-400 text-[11px]">Official Support Email</div>
+            <div class="text-brand-600 dark:text-brand-400 font-bold text-sm select-all">help.loan.info@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3 text-xs text-slate-600 dark:text-slate-400">
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm flex items-center gap-2">
+            <i class="fa-solid fa-clock text-emerald-600"></i> 운영 시간
+          </h3>
+          <p>• 평일: 09:30 ~ 18:00 (KST)</p>
+          <p>• 주말 및 공휴일: 이메일 접수 순차 처리</p>
+        </div>
+      </div>
+
+      <!-- Contact Form (Right) -->
+      <div class="md:col-span-7 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-paper-plane text-brand-600"></i> 온라인 문의 접수
+        </h2>
+        
+        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4 text-xs">
+          <div>
+            <label for="contact-name" class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">성함 / 닉네임 <span class="text-red-500">*</span></label>
+            <input type="text" id="contact-name" required placeholder="홍길동" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+
+          <div>
+            <label for="contact-email" class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">답변받으실 이메일 <span class="text-red-500">*</span></label>
+            <input type="email" id="contact-email" required placeholder="your.name@example.com" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+
+          <div>
+            <label for="contact-category" class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">문의 유형</label>
+            <select id="contact-category" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option value="calculator-error">계산기 오차/버그 제보</option>
+              <option value="feature-suggestion">새로운 기능 제안</option>
+              <option value="guide-feedback">금융 가이드 글 관련 의견</option>
+              <option value="security">암호화 및 보안 관련 문의</option>
+              <option value="other">기타 일반 문의</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="contact-message" class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">문의 내용 <span class="text-red-500">*</span></label>
+            <textarea id="contact-message" rows="5" required placeholder="문의하실 내용을 상세히 적어주세요. (예: 대출 계산 시 3년 중도상환 수수료 면제 로직 관련 질문 등)" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-md transition-colors flex items-center justify-center gap-2 text-sm">
+              <i class="fa-solid fa-paper-plane text-xs"></i> 문의 메시지 전송하기
+            </button>
+          </div>
+        </form>
+
+        <div id="contact-success-msg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs">
+          <p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i> 문의가 정상적으로 접수되었습니다!</p>
+          <p class="mt-1">기재해주신 이메일로 빠른 시일 내에 답변드리겠습니다. 소중한 의견 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-16 text-xs text-slate-500 dark:text-slate-400 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-6">
+      <div class="max-w-2xl mx-auto text-center space-y-2">
+        <h4 class="font-bold text-slate-900 dark:text-white">스마트 대출 이자 계산기</h4>
+        <p class="leading-relaxed text-slate-600 dark:text-slate-400">
+          복잡한 대출 상환 계획을 쉽고 투명하게 계산하여, 사용자가 올바른 금융 의사결정을 내릴 수 있도록 돕는 비영리 정보 플랫폼입니다.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-700 dark:text-slate-300">
+        <a href="/about.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">사이트 소개</a>
+        <a href="/contact.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors font-bold text-brand-600 dark:text-brand-400">문의하기</a>
+        <a href="/privacy.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">개인정보 처리방침</a>
+        <a href="/terms.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">이용약관</a>
+        <a href="/disclaimer.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">면책조항</a>
+      </div>
+
+      <p class="text-center text-slate-400 dark:text-slate-500">© 2026 Smart Loan Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('contact-success-msg').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

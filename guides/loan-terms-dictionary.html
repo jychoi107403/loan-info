@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko" class="light">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYFYJM880Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NYFYJM880Q');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark'); document.documentElement.classList.remove('light');
+    } else {
+      document.documentElement.classList.remove('dark'); document.documentElement.classList.add('light');
+    }
+  </script>
+  <title>대출 필수 금융 용어 사전 30선: LTV, DSR, 코픽스, 근저당권 총정리 | 스마트 대출 가이드</title>
+  <meta name="description" content="대출 계약 전 꼭 알아야 할 필수 금융 용어 30선(LTV, DTI, DSR, 코픽스, 근저당권, 질권설정, 채권최고액, 금리인하요구권 등)을 알기 쉽게 해설합니다.">
+  <link rel="canonical" href="https://loan-info.pages.dev/guides/loan-terms-dictionary.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Noto Sans KR', 'Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#f0f7ff', 100: '#e0effe', 200: '#bae0fd',
+              500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>body { font-family: 'Noto Sans KR', 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col justify-between transition-colors duration-200">
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-calculator text-lg"></i>
+        </div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          스마트 대출 계산기 <span class="text-xs bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded-full font-semibold border border-brand-200 dark:border-brand-800">용용이 ver</span>
+        </span>
+      </a>
+
+      <div class="flex items-center space-x-2">
+        <nav class="hidden md:flex items-center space-x-1">
+          <a href="/" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">계산기 홈</a>
+          <a href="/guides/amortization-methods.html" class="px-3 py-2 rounded-lg text-sm font-semibold bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800">금융 가이드</a>
+          <a href="/about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">소개</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">문의하기</a>
+        </nav>
+        <button onclick="toggleDarkMode()" id="btn-theme-toggle" class="p-2 w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-moon dark:hidden text-sm"></i><i class="fa-solid fa-sun hidden dark:block text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+    <nav class="flex items-center text-xs text-slate-500 dark:text-slate-400 mb-6 space-x-2">
+      <a href="/" class="hover:text-brand-600"><i class="fa-solid fa-house mr-1"></i>홈</a>
+      <span><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      <a href="/guides/amortization-methods.html" class="text-slate-600 dark:text-slate-400 hover:text-brand-600">금융 가이드</a>
+      <span><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      <span class="text-slate-900 dark:text-slate-100 font-semibold">대출 필수 금융 용어 사전</span>
+    </nav>
+
+    <article class="bg-white dark:bg-slate-900 p-6 sm:p-10 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-8">
+      <div class="space-y-4 border-b border-slate-100 dark:border-slate-800 pb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-bold border border-indigo-200 dark:border-indigo-800">
+          <i class="fa-solid fa-book-bookmark"></i> 금융 백과사전
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+          대출 전 반드시 알아야 할<br>
+          <span class="text-brand-600 dark:text-brand-400">필수 금융 용어 사전 30선 총정리</span>
+        </h1>
+        <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400 pt-1">
+          <span><i class="fa-regular fa-calendar mr-1"></i> 2026.09.12</span>
+          <span><i class="fa-regular fa-clock mr-1"></i> 읽는 시간 약 8분</span>
+          <span><i class="fa-solid fa-user-pen mr-1"></i> 스마트 대출 연구팀</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1">
+          <h4 class="font-bold text-slate-900 dark:text-white text-brand-600">1. 원리금 (Principal and Interest)</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">대출받은 원래 금액(원금)과 그에 따라 발생하는 이자를 합친 총금액입니다.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1">
+          <h4 class="font-bold text-slate-900 dark:text-white text-brand-600">2. 코픽스 (COFIX)</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">국내 8개 주요 시중은행의 자금조달비용을 가중평균하여 산출한 주택담보대출 기준금리입니다.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1">
+          <h4 class="font-bold text-slate-900 dark:text-white text-brand-600">3. 가산금리 (Spread)</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">기준금리에 은행의 업무 원가, 마진, 차주의 신용도에 따라 덧붙여지는 추가 금리입니다.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1">
+          <h4 class="font-bold text-slate-900 dark:text-white text-brand-600">4. 근저당권 설정 및 채권최고액</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">은행이 담보 부동산에 대해 우선 변제받을 수 있는 권리로, 통상 대출금의 110%~120%로 등기부에 설정됩니다.</p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-600 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+        <div>
+          <h4 class="font-bold text-base">용어를 이해했다면 지금 바로 계산해 보세요</h4>
+          <p class="text-xs text-brand-100 mt-1">대출 조건 입력 한 번으로 완벽한 금융 시뮬레이션을 시작하세요.</p>
+        </div>
+        <a href="/" class="px-5 py-2.5 bg-white text-brand-700 font-bold rounded-xl text-xs sm:text-sm shadow shrink-0 hover:bg-brand-50 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-calculator"></i> 대출 계산기 홈
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-16 text-xs text-slate-500 dark:text-slate-400 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-6">
+      <div class="max-w-2xl mx-auto text-center space-y-2">
+        <h4 class="font-bold text-slate-900 dark:text-white">스마트 대출 이자 계산기</h4>
+        <p class="leading-relaxed text-slate-600 dark:text-slate-400">
+          복잡한 대출 상환 계획을 쉽고 투명하게 계산하여, 사용자가 올바른 금융 의사결정을 내릴 수 있도록 돕는 비영리 정보 플랫폼입니다.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-700 dark:text-slate-300">
+        <a href="/about.html" class="hover:text-brand-600 dark:hover:text-brand-400">사이트 소개</a>
+        <a href="/contact.html" class="hover:text-brand-600 dark:hover:text-brand-400">문의하기</a>
+        <a href="/privacy.html" class="hover:text-brand-600 dark:hover:text-brand-400">개인정보 처리방침</a>
+        <a href="/terms.html" class="hover:text-brand-600 dark:hover:text-brand-400">이용약관</a>
+        <a href="/disclaimer.html" class="hover:text-brand-600 dark:hover:text-brand-400">면책조항</a>
+      </div>
+      <p class="text-center text-slate-400 dark:text-slate-500">© 2026 Smart Loan Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark'); document.documentElement.classList.add('light'); localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light'); document.documentElement.classList.add('dark'); localStorage.setItem('theme', 'dark');
+      }
+    }
+  </script>
+</body>
+</html>
