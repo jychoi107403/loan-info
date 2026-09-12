@@ -1,116 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Application -->
+  <!-- 메인 대출 계산기 -->
   <url>
-    <loc>https://loan-info.pages.dev/</loc>
+    <loc>https://bangjang.net/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Legal & Trust Pages (E-E-A-T) -->
+  <!-- 금융 가이드 (전문 콘텐츠 12종) -->
   <url>
-    <loc>https://loan-info.pages.dev/about.html</loc>
+    <loc>https://bangjang.net/guides/amortization-methods.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/privacy.html</loc>
+    <loc>https://bangjang.net/guides/dsr-guide.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/terms.html</loc>
+    <loc>https://bangjang.net/guides/early-repayment-guide.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/disclaimer.html</loc>
+    <loc>https://bangjang.net/guides/credit-score-management.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/contact.html</loc>
+    <loc>https://bangjang.net/guides/mortgage-loan-guide.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/jeonse-loan-guide.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/credit-loan-comparison.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/refinancing-loan-guide.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/grace-period-guide.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/interest-rate-types.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/government-support-loans.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bangjang.net/guides/loan-terms-dictionary.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- 12 Financial Guides Articles -->
+  <!-- 법적 필수 및 서비스 소개 페이지 (5종) -->
   <url>
-    <loc>https://loan-info.pages.dev/guides/amortization-methods.html</loc>
+    <loc>https://bangjang.net/about.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/guides/dsr-guide.html</loc>
+    <loc>https://bangjang.net/privacy.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/guides/early-repayment-guide.html</loc>
+    <loc>https://bangjang.net/terms.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/guides/credit-score-management.html</loc>
+    <loc>https://bangjang.net/disclaimer.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loan-info.pages.dev/guides/mortgage-loan-guide.html</loc>
+    <loc>https://bangjang.net/contact.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/jeonse-loan-guide.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/credit-loan-comparison.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/refinancing-loan-guide.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/grace-period-guide.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/interest-rate-types.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/government-support-loans.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://loan-info.pages.dev/guides/loan-terms-dictionary.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -1,3 +1,16 @@
+# robots.txt for https://bangjang.net
 User-agent: *
 Allow: /
-Sitemap: https://loan-info.pages.dev/sitemap.xml
+
+# Googlebot, Yeti (Naver), Bingbot 등 모든 검색엔진 크롤러 허용
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# 사이트맵 위치 지정 (네이버 및 구글 검색엔진 자동 색인 지원)
+Sitemap: https://bangjang.net/sitemap.xml

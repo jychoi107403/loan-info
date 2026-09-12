@@ -1,1 +1,4 @@
-google.com, pub-1774804957511077, DIRECT, f08c47fec0942fa0
+# Google AdSense ads.txt for bangjang.net
+# 애드센스 승인 후 발급받는 본인의 게시자 ID(pub-xxxxxxxxxxxxxxxx)로 수정해 주시면 됩니다.
+# 형식: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
